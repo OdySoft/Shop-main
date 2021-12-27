@@ -1,0 +1,149 @@
+/*shop styles*/
+html{
+    background-color: #7D7D7D;
+}
+.header-container{
+    height: 197px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-26.14%, rgba(255, 204, 0, 0.4)), to(rgba(255, 204, 0, 0)));
+    background: linear-gradient(180deg, rgba(255, 204, 0, 0.4) -26.14%, rgba(255, 204, 0, 0) 100%);
+}
+.title{
+    margin-top: 42px;
+}
+.h2-title{
+    font-size: 40px;
+}
+/*yellow stick*/
+.title::after{
+    content: " ";
+    height: 4px;
+    width: 100%;
+    background-color: #FFCC00;
+    display: block;
+    margin-top: 12px;
+}
+.logOut{
+    top: 0;
+    right: 0;
+    padding: 20px 20px 0px 0px;
+    cursor: pointer;
+    position: fixed;
+}
+.esc{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 6px;
+    margin-right: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.esc:hover{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: red;
+}
+.esc-p{
+    font-size: 16px;
+    color: red;
+    opacity: 0.8;
+}
+.esc-p:hover{
+    color: white;
+    opacity: 1;
+}
+.section-container{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+}
+.box{
+    height: 250px;
+    max-width: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+    padding-top: 9px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 40px;
+}
+.box:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.esc , .box h4 , .h2-title , .dolar , .footer-log-out , .burger-p {
+    font-weight: bold;
+}
+.box h4{
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 19px;
+}
+.price-box{
+    height: 37px;
+    border-radius: 0px 0px 10px 10px;
+}
+.line{
+    width: 100%;
+}
+.line:not(:first-child){
+    margin-top: 36px;
+}
+.dolar{
+    font-size: 19px;
+    color: #131313;
+}
+.dolar::before{
+    content: " ";
+    background-image: url("../icon/coin.png");
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    -webkit-transform: translateY(-1.5px);
+            transform: translateY(-1.5px);
+}
+
+/*footer*/
+.footer-log-out{
+    width: 150px;
+    height: 150px;
+    border-radius: 163px 0px 0px 0px;
+    padding: 88px 42px 10px 41px;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+.footer-log-out:hover{
+    background-color: white;
+}
+.burger-box{
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+}
+.burger-p {
+    font-size: 19px;
+}
+.burger-p:nth-child(2){
+    opacity: 0.5;
+}
+.burger-p:nth-child(3){
+    opacity: 0.3;
+}
+.burger-span{
+    color: #FFCC00;
+}
+.burger-span::after{
+    content: url("../icon/Group.png");
+    margin-left: 2px;
+}
+.footer-container{
+    justify-content: flex-end;
+    height: 170px;
+}
